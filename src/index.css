@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  max-width: 1540px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px 0 100px;
+  background-color: red;
+}
+
+/* .header {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+} */
+
+header .logo {
+  width: 70px;
+  height: 43.71px;
+  display: flex;
+  flex-direction: column;
+}
+
+header #logo-name {
+  margin-top: -12px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
