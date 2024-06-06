@@ -13,8 +13,8 @@ a {
   color: #333333;
 }
 a:hover {
-  border-top: 2px solid #333333;
-  border-bottom: 2px solid #333333;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
 }
 a.active {
   border-top: 2px solid #333333;
@@ -22,14 +22,17 @@ a.active {
 }
 
 header {
+  position: sticky;
+  top: 0;
   height: 102px;
   max-width: 1540px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 200px 20px 100px;
+  padding: 20px 480px 20px 175px;
   background-color: white;
+  z-index: 9999;
 }
 
 /* .header {
@@ -45,9 +48,12 @@ header .logo {
   height: 43.71px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 header #logo-name {
+  width: 80px;
+  /* height: 14px; */
   margin-top: -12px;
 }
 
@@ -59,4 +65,119 @@ nav ul {
 nav ul li {
   /* background-color: green; */
   padding: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+#homepage {
+  max-width: 1170px;
+  min-height: 100vh;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+#homepage .hero-container {
+  width: 100%;
+  min-height: 829px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#homepage .hero-container .image {
+  width: 790px;
+  height: 892px;
+
+  position: relative;
+}
+#homepage .hero-container .image img {
+  width: 100%;
+}
+
+.hero-container .contents .arrows {
+  margin-top: 80px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 8px;
+
+  margin-bottom: 70px;
+}
+
+.hero-container .contents .arrows img {
+  cursor: pointer;
+  /* width: 24px; */
+  padding: 8px;
+  border: 1px solid #f2f2f2;
+}
+.hero-container .contents .arrows img:nth-child(2) {
+  background-color: #f9f9f9;
+}
+
+.about {
+  height: 435px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+
+  padding: 30px 80px 0px 80px;
+}
+
+.about .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  /* flex-direction: column; */
+}
+.about .images .left {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.about .images img {
+  width: 270px;
+}
+
+.about .content {
+}
+.about .content p {
+  margin-top: 14px;
+  max-width: 400px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #000000;
+}
+
+/* button */
+#btn {
+  width: 220px;
+  height: 71px;
+  /* border: none; */
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: white;
+  color: #333333;
+  white-space: nowrap;
+
+  transition: background-color 2s ease-in-out; */
+}
+
+#btn img {
+  width: 50px;
+  height: 20px;
+}
+
+#btn:hover {
+  border: 1px solid #848080;
+  background-color: #fbfbfb;
 }
