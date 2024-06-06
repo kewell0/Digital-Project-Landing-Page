@@ -1,0 +1,20 @@
+#pagination {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+#pagination .arrows {
+  display: flex;
+  gap: 14px;
+}
+
+#pagination .arrows img {
+  cursor: pointer;
+  /* width: 24px; */
+  padding: 8px;
+  border: 1px solid #f2f2f2;
+}
+#pagination .arrows img:nth-child(2) {
+  background-color: #f9f9f9;
+}

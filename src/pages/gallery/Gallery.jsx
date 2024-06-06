@@ -8,12 +8,10 @@ import img7 from "../../assets/gal7.svg";
 import img8 from "../../assets/gal8.svg";
 import img9 from "../../assets/gal9.svg";
 import img10 from "../../assets/gal10.svg";
-import leftArrow from "../../assets/arrow-left.svg";
-import rightArrow from "../../assets/arrow-right.svg";
-import slider from "../../assets/slide.svg";
 
 import "./Gallery.css";
 import CustomText from "../../components/CustomText";
+import Pagination from "../../components/pagination/Pagination";
 
 const Gallery = () => {
   return (
@@ -36,14 +34,7 @@ const Gallery = () => {
         <img src={img10} alt="image" />
       </div>
 
-      <div id="pagination">
-        <img src={slider} alt="" />
-
-        <div className="arrows">
-          <img src={leftArrow} alt="arrow" />
-          <img src={rightArrow} alt="arrow" />
-        </div>
-      </div>
+      <Pagination />
     </div>
   );
 };
