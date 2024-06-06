@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const CustomText = ({ text, color, weight }) => {
+const CustomText = ({ text, color, weight, marginTop }) => {
   return (
     <h1
       style={{
@@ -7,6 +7,7 @@ const CustomText = ({ text, color, weight }) => {
         color: color || "#BDBDBD",
         lineHeight: "64px",
         fontWeight: weight || "300",
+        marginTop,
       }}
     >
       {text}

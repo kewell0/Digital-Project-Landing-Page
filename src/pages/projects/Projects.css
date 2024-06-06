@@ -10,7 +10,30 @@
 #projects .projects-contents {
   border-top: 1px solid #f2f2f2;
   padding-top: 40px;
+
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#projects .project {
+  display: flex;
+  /* align-items: center; */
+  gap: 40px;
+  background-color: #fbfbfb;
+}
+#projects .project h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #bdbdbd;
+  margin: 20px 0 70px 0;
+}
+
+#projects .project p {
+  max-width: 400px;
+  font-family: 16x;
+  font-weight: 300;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 50px;
 }

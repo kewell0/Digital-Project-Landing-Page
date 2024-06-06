@@ -16,8 +16,8 @@
   transition: background-color 2s ease-in-out;
 }
 
-#btn img {
-  width: 50px;
+.icon {
+  width: 20px;
   height: 20px;
 }
 

@@ -1,0 +1,19 @@
+#contacts {
+  /* max-width: 1170px; */
+  margin: 0 auto;
+  padding: 0 0 0 160px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacts .contacts-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#contacts .contacts-left p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #333333;
+}
