@@ -6,8 +6,15 @@ import img1 from "../../assets/about1.svg";
 import img2 from "../../assets/about2.svg";
 import img3 from "../../assets/about3.svg";
 import slider from "../../assets/slide-numbers.svg";
-import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
+
+import project1 from "../../assets/project1.svg";
+import project2 from "../../assets/project2.svg";
+import project3 from "../../assets/project3.svg";
+import project4 from "../../assets/project4.svg";
+import project5 from "../../assets/project5.svg";
+
+import contactIMG from "../../assets/contact.svg";
 
 const HomePage = () => {
   return (
@@ -58,6 +65,75 @@ const HomePage = () => {
           </p>
 
           <Button title="READ MORE" />
+        </div>
+      </div>
+
+      <div id="focus">
+        <CustomText text="Main Focus/Mission Statement" />
+
+        <div className="content">
+          <div className="left">
+            <h1>1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur, lectus et facilisis placerat.
+            </p>
+          </div>
+
+          <div className="right">
+            <h1>2</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur, lectus et facilisis placerat, magna mauris porttitor
+              tortor, a auctor est felis ut nisl.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <CustomText text="Our Projects" />
+
+        <div className="images">
+          <img src={project1} alt="image" />
+          <img src={project2} alt="image" />
+          <img src={project3} alt="image" />
+          <img src={project4} alt="image" />
+          <img src={project5} alt="image" />
+        </div>
+
+        <div className="button">
+          <Button
+            title="ALL PROJECTS"
+            style={{ background: "#333333", color: "white" }}
+            whiteIcon="yes"
+          />
+        </div>
+      </div>
+
+      <div id="contact">
+        <CustomText text="Contact Us" />
+
+        <div className="contact-wrapper">
+          <form action="#" className="form">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="E-mail" />
+            <input type="text" placeholder="Interested In" />
+            <textarea placeholder="Message"></textarea>
+
+            <div className="sendForm">
+              <Button
+                title="SEND EMAIL"
+                style={{ background: "#333333", color: "white" }}
+                whiteIcon="yes"
+              />
+            </div>
+          </form>
+
+          <div>
+            <img src={contactIMG} alt="contact" />
+          </div>
         </div>
       </div>
     </div>
