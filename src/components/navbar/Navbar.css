@@ -1,0 +1,60 @@
+header {
+  position: sticky;
+  top: 0;
+  height: 102px;
+  max-width: 1540px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 480px 20px 175px;
+  background-color: white;
+  z-index: 9999;
+}
+
+header .logo {
+  width: 70px;
+  height: 43.71px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header #logo-name {
+  width: 80px;
+  /* height: 14px; */
+  margin-top: -12px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  /* background-color: green; */
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+@media screen and (max-width: 1313px) {
+  header {
+    padding: 20px 80px 20px 175px;
+  }
+}
+@media screen and (max-width: 880px) {
+  header {
+    padding: 20px 40px 20px 40px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 630px) {
+  nav ul {
+    display: none;
+  }
+}

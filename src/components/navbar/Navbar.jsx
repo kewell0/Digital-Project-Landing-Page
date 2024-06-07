@@ -2,6 +2,8 @@ import logo from "../../assets/logo.svg";
 import logoName from "../../assets/logo-name.svg";
 import { NavLink } from "react-router-dom";
 
+import "./Navbar.css";
+
 export const Navbar = () => {
   return (
     <header>
