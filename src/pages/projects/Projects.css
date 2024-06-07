@@ -17,6 +17,7 @@
 }
 
 #projects .project {
+  min-height: 435px;
   display: flex;
   /* align-items: center; */
   gap: 40px;
@@ -36,4 +37,17 @@
   line-height: 25px;
   color: #000000;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1175px) {
+  #projects {
+    padding: 0 12px 0 12px;
+  }
+
+  #projects .project {
+    flex-direction: column;
+  }
+  #projects .project p {
+    max-width: 100%;
+  }
 }

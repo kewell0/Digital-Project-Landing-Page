@@ -51,11 +51,11 @@ const HomePage = () => {
       <div className="about">
         <div className="images">
           <div className="left">
-            <img src={img1} alt="image" />
-            <img src={img2} alt="image" />
+            <img className="about-img" src={img1} alt="image" />
+            <img className="about-img" src={img2} alt="image" />
           </div>
           <div>
-            <img src={img3} alt="image" />
+            <img className="about-img" src={img3} alt="image" />
           </div>
         </div>
 

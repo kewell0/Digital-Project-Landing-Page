@@ -18,3 +18,9 @@
 #gallery .gallery-contents img {
   flex: 1;
 }
+
+@media screen and (max-width: 1175px) {
+  #gallery {
+    padding: 0 12px 0 12px;
+  }
+}

@@ -17,3 +17,18 @@
   font-weight: 300;
   color: #333333;
 }
+
+@media screen and (max-width: 1266px) {
+  #contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #contacts .contact-map img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1175px) {
+  #contacts {
+    padding: 0 16px 0 12px;
+  }
+}

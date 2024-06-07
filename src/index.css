@@ -316,14 +316,29 @@ a {
 
   /* about */
   .about {
+    margin-top: -300px;
     min-height: 435px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-  .about img {
+  .about .about-img {
     display: none;
+  }
+  .about .content p {
+    margin-bottom: 20px;
+  }
+
+  /* focus */
+  #focus .content h1 {
+    margin-top: 20px;
+    font-size: 98px;
+  }
+  #focus .content p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   /* projects */
@@ -337,9 +352,14 @@ a {
     display: none;
   }
 
+  /* contact */
+  #contact {
+    /* margin-top: -30px; */
+  }
+
   #contact .contact-wrapper {
     padding: 0 5px 0 5px;
-    margin-top: 40px;
+    margin-top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,5 +367,27 @@ a {
   }
   #contact .contact-wrapper img {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  #contact form input {
+    max-width: 355px;
+    height: 46px;
+  }
+  #contact form textarea {
+    max-width: 355px;
+    height: 100px;
+
+    margin-bottom: 50px;
+  }
+
+  #contact .sendForm {
+    margin-top: -30px;
   }
 }
