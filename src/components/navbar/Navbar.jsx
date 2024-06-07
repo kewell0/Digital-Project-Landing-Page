@@ -2,16 +2,15 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import logoName from "../../assets/logo-name.svg";
-
 import hamburgerIcon from "../../assets/hamburger-menu.svg";
-
 import "./Navbar.css";
 import MobileNav from "./MobileNav";
 
 export const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
+
   const toggleHamburger = () => {
-    setHamburger(true);
+    setHamburger(!hamburger);
   };
 
   return (
@@ -20,7 +19,6 @@ export const Navbar = () => {
       <header>
         <div className="logo">
           <img src={logo} alt="logo" id="logo" />
-
           <img src={logoName} alt="logo-name" id="logo-name" />
         </div>
 
@@ -44,7 +42,7 @@ export const Navbar = () => {
           </ul>
         </nav>
         <div id="hamburger" onClick={toggleHamburger}>
-          <img src={hamburgerIcon} alt="icon" />
+          {hamburger ? <h2>X</h2> : <img src={hamburgerIcon} alt="icon" />}
         </div>
       </header>
     </>

@@ -29,9 +29,7 @@ const MobileNav = ({ hamburger, setHamburger }) => {
               // hamburger && "mobile-nav activated"
             }
           >
-            {console.log(hamburger)}
-
-            <ul>
+            <ul className="mobile-links">
               <NavLink to={"/"}>
                 <li>MAIN</li>
               </NavLink>
