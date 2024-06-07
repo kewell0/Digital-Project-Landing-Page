@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import "./Navbar.css";
+
 const MobileNav = ({ hamburger, setHamburger }) => {
   const [screenWidth, setScreenWidth] = useState([window.innerWidth]);
 
