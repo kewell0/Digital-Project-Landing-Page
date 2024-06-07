@@ -12,6 +12,26 @@ header {
   z-index: 9999;
 }
 
+/* hide hamburger */
+header #hamburger {
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+  color: #333333;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+header a:hover {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+header a.active {
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+}
+
 header .logo {
   width: 70px;
   height: 43.71px;
@@ -56,5 +76,118 @@ nav ul li {
 @media screen and (max-width: 630px) {
   nav ul {
     display: none;
+  }
+
+  header #hamburger {
+    display: block;
+  }
+}
+
+/* MOBILE SCREEN */
+
+.mobile-nav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 10px 0px 0px 10px;
+  width: 0px;
+  min-height: 943px;
+  z-index: 9999;
+
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  width: 100%;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 10px 0px 0px 10px;
+  width: 0;
+  min-height: 943px;
+  z-index: 9999;
+
+  overflow: hidden;
+  transform: translateX(-100%);
+
+  animation-name: hamburgerToggle;
+  animation-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes hamburgerToggle {
+  0% {
+    width: 0%;
+  }
+  100% {
+    max-width: 60%;
+  }
+}
+
+.mobile-nav-width {
+  transform: translateX(0);
+  width: 35%;
+}
+
+/* .mobile-nav-hidden {
+  transform: translateX();
+  width: 0;
+} */
+
+.mobile-nav ul {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+.mobile-nav ul .active {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.mobile-nav ul li {
+  max-width: 220px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--black);
+
+  display: flex;
+  /* justify-content: center; */
+  padding: 20px 60px 20px 20px;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 65%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 70%;
   }
 }

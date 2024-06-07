@@ -10,17 +10,9 @@
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
-  color: #333333;
-}
-a:hover {
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-}
-a.active {
-  border-top: 2px solid #333333;
-  border-bottom: 2px solid #333333;
 }
 
 #homepage {
@@ -40,7 +32,7 @@ a.active {
 }
 
 #homepage .hero-container .image {
-  width: 790px;
+  max-width: 790px;
   height: 892px;
 
   position: relative;
@@ -69,7 +61,7 @@ a.active {
 }
 
 .about {
-  height: 435px;
+  min-height: 435px;
   display: flex;
   justify-content: space-between;
   background-color: #fbfbfb;
@@ -109,8 +101,9 @@ a.active {
 }
 
 #focus {
-  margin-top: 80px;
+  margin-top: 100px;
   max-width: 1170px;
+  min-height: 268px;
 }
 #focus h1 {
   font-size: 200px;
@@ -127,22 +120,26 @@ a.active {
 #focus .content {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
-  width: 100%;
 }
 
 #focus .content .left {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 24px;
 }
+#focus .content .left p {
+  max-width: 279px;
+}
 #focus .content .right {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
 #projects {
+  padding-top: 80px;
   max-width: 1170px;
   min-height: 765px;
 }
@@ -155,7 +152,7 @@ a.active {
 }
 
 #projects .images img {
-  height: 255px;
+  max-height: 255px;
   flex: 1;
 }
 
@@ -173,7 +170,7 @@ a.active {
 }
 
 #contact {
-  margin-top: 30px;
+  margin-top: 80px;
   min-height: 603px;
 }
 
@@ -208,4 +205,147 @@ a.active {
   resize: none;
 
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1175px) {
+  #homepage {
+    padding: 0 12px 0 12px;
+  }
+}
+@media screen and (max-width: 1073px) {
+  #homepage .hero-container {
+    margin: 0 auto;
+    width: 100%;
+    /* min-height: 829px; */
+
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .hero-container .image {
+    order: -1;
+  }
+
+  #homepage .hero-container .image img {
+    margin-bottom: -600px;
+  }
+
+  .hero-container .arrows {
+    /* padding-top: -4000px; */
+    justify-content: space-between;
+  }
+  .hero-container .slider1 {
+    display: none;
+  }
+  .hero-container .hero-btn {
+    display: none;
+  }
+
+  /* about */
+  .about {
+    min-height: 435px;
+    display: flex;
+    align-items: center;
+
+    padding: 30px 0px 0px 0px;
+  }
+
+  .about .images .left {
+    display: none;
+  }
+
+  .about .content p {
+    margin-top: 14px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #000000;
+
+    margin-bottom: 0px;
+  }
+
+  /* focus */
+
+  #focus .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #focus .content .left p {
+    max-width: 100%;
+  }
+
+  #contact .contact-wrapper img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #homepage {
+    /* padding-top: -200px; */
+    min-height: 500px;
+  }
+
+  #homepage .hero-container {
+    min-height: 200px;
+  }
+  #homepage .hero-container .image img {
+    height: 800px;
+    margin-top: -600px;
+  }
+
+  .hero-container .contents .arrows {
+    /* display: none; */
+    justify-content: space-between;
+
+    margin-top: -400px;
+  }
+  .hero-container .slider1 {
+    display: none;
+  }
+  .hero-container .hero-btn {
+    display: none;
+  }
+  .hero-header {
+    display: none;
+  }
+
+  /* about */
+  .about {
+    min-height: 435px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .about img {
+    display: none;
+  }
+
+  /* projects */
+
+  #projects .images img {
+    /* max-height: 170px; */
+    width: 170px;
+    flex: 1;
+  }
+  #projects .images img:nth-child(3) {
+    display: none;
+  }
+
+  #contact .contact-wrapper {
+    padding: 0 5px 0 5px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #contact .contact-wrapper img {
+    max-width: 100%;
+  }
 }

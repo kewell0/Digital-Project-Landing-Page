@@ -5,19 +5,21 @@ import rightArrowWhite from "../../assets/arrow-right-White.svg";
 
 import styles from "./Button.module.css";
 
-const Button = ({ title, style, whiteIcon }) => {
+const Button = ({ title, style, whiteIcon, className }) => {
   return (
-    <Link id={styles.btn} style={style}>
-      {title}
+    <div className={className}>
+      <Link id={styles.btn} style={style}>
+        {title}
 
-      <div>
-        <img
-          className={styles.icon}
-          src={whiteIcon ? rightArrowWhite : rightArrow}
-          alt="icon"
-        />
-      </div>
-    </Link>
+        <div>
+          <img
+            className={styles.icon}
+            src={whiteIcon ? rightArrowWhite : rightArrow}
+            alt="icon"
+          />
+        </div>
+      </Link>
+    </div>
   );
 };
 

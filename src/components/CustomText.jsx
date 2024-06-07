@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-const CustomText = ({ text, color, weight, marginTop }) => {
+const CustomText = ({ text, color, weight, marginTop, className }) => {
   return (
     <h1
+      className={className}
       style={{
         fontSize: "64px",
         color: color || "#BDBDBD",

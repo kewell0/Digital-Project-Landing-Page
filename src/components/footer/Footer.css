@@ -13,13 +13,21 @@
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
-  padding: 40px 60px 60px 0px;
+  padding: 40px 60px 60px 20px;
 }
 
 #footer .top li {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+}
+#footer .top a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .top a:hover {
+  color: grey;
 }
 
 #footer .top .information {
@@ -61,4 +69,29 @@
 #footer .bottom p {
   margin-top: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  /* #footer {
+    padding: 0 0 0 20px;
+  } */
+  #footer .top .information {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .socials {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  #footer .top {
+    padding: 40px 5px 50px 10px;
+  }
+  #footer .top #logo {
+    width: 100px;
+  }
+  .information {
+    display: none;
+  }
 }

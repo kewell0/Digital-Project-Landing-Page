@@ -7,21 +7,32 @@ import pin from "../../assets/pin.svg";
 import location from "../../assets/location.svg";
 import phone from "../../assets/phone.svg";
 import email from "../../assets/message.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div id="footer">
       <div className="top">
-        <img src={logo} alt="logo" />
+        <img id="logo" src={logo} alt="logo" />
 
         <div className="information">
           <h4>Information</h4>
           <ul>
-            <li>Main</li>
-            <li>Gallery</li>
-            <li>Projects</li>
-            <li>Certifications</li>
-            <li>Contacts</li>
+            <Link to="/">
+              <li>Main</li>
+            </Link>
+            <Link to="gallery">
+              <li>Gallery</li>
+            </Link>
+            <Link to="projects">
+              <li>Projects</li>
+            </Link>
+            <Link to="certifications">
+              <li>Certifications</li>
+            </Link>
+            <Link to="contacts">
+              <li>Contacts</li>
+            </Link>
           </ul>
         </div>
 

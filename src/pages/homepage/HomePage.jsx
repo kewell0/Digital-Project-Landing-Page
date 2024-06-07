@@ -21,21 +21,27 @@ const HomePage = () => {
     <div id="homepage">
       <div className="hero-container">
         <div className="contents">
-          <CustomText text="PROJECT" />
-          <CustomText text="Lorum" color="#333333" weight="700" />
+          <CustomText text="PROJECT" className="hero-header" />
+          <CustomText
+            text="Lorum"
+            color="#333333"
+            weight="700"
+            className="hero-header"
+          />
 
           <div className="arrows">
             <img src={leftArrow} alt="arrow" />
             <img src={rightArrow} alt="arrow" />
           </div>
 
-          <img src={slider} alt="" />
+          <img className="slider1" src={slider} alt="" />
         </div>
 
         <div className="image">
           <img src={houseIMG} alt="house" />
 
           <Button
+            className="hero-btn"
             title="VIEW PROJECT"
             style={{ position: "absolute", bottom: "42px" }}
           />
